@@ -38,7 +38,7 @@ myProj.parse(function (err) {
     const group = myProj.getPBXGroupByKey(main_group_uuid);
     log('Target children: ', group.children)
     const target = group.children.find((child) => child.comment == TARGET);
-    const target_uuid = target.value;
+    const target_uuid = "32B6594A21300FA400ED06DE" //target.value;
 
     const tests = getRecursiveTests(myProj, target_uuid, []);
     log('Tests Found in Target:',tests.length);
